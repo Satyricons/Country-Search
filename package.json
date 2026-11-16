@@ -1,0 +1,33 @@
+{
+  "name": "country-search",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "RS School Fullstack: Country Search",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyricons/Country-Search.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "@typescript-eslint/parser": "^8.72.2",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.10.1",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.0"
+  }
+}
