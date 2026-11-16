@@ -1,4 +1,4 @@
-import { HttpError } from './api';
+import { HttpError } from './api.js';
 
 export type ErrorState =
   | { kind: 'aborted' }

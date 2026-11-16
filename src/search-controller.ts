@@ -1,13 +1,13 @@
-import { searchCountries, type CountryCard } from './api';
-import { debounce } from './debounce';
-import { classifyError, type ErrorState } from './errors';
+import { searchCountries, type CountryCard } from './api.js';
+import { debounce } from './debounce.js';
+import { classifyError, type ErrorState } from './errors.js';
 
 export type SearchCallback = (results: CountryCard[]) => void;
 export type ErrorCallback = (error: ErrorState) => void;
 
 export class SearchController {
   private abortController: AbortController | null = null;
-  private debouncedSearch: ReturnType<typeof debounce>;
+  private debouncedSearch: (query: string) => void;
 
   constructor(
     private onSuccess: SearchCallback,
